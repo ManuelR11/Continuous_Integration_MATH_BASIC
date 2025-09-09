@@ -8,25 +8,28 @@ on:
 
 jobs:
   test:
-    name: unit-tests # <— ESTE nombre define el check visible
     runs-on: ubuntu-latest
     env:
-      PYTHONPATH: ${{ github.workspace }}
+      PYTHONPATH: ${{ github.workspace }} # <- clave
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Show tree (debug)
         run: |
           pwd
           ls -la
           find . -maxdepth 2 -type d -print
+
       - name: Run tests
         run: pytest -q
