@@ -19,7 +19,7 @@ def _ensure_number(n, name="n"):
 def square(n):
     """Retorna el cuadrado de un número (int o float)."""
     _ensure_number(n, "n")
-    return n + n
+    return n * n
 
 
 def factorial(n):
