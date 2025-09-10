@@ -17,18 +17,6 @@ Luego ejecuta:
 ```bash
 pytest -q
 ```
-Verás que fallan tests, demostrando que la CI atraparía el error.
+se puede ver que fallan tests, demostrando que la CI atraparía el error.
 ```
 
-## Estructura
-```
-.
-├── math_basic/
-│   ├── __init__.py
-│   └── core.py
-├── tests/
-│   └── test_core.py
-├── .github/workflows/ci.yml
-├── requirements.txt
-└── README.md
-```
