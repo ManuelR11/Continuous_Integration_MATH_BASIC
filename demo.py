@@ -1,10 +1,3 @@
-# demo.py
-"""
-Demo interactiva de math_basic con menú (sin subcomandos).
-- Muestra un quick demo al iniciar
-- Luego abre un menú para square, factorial, is_prime, gcd, lcm
-- Entrada validada y mensajes de error claros
-"""
 
 from math_basic import square, factorial, is_prime, gcd, lcm
 
